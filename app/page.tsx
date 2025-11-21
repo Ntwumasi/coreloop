@@ -179,14 +179,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg"
-                alt="Developer working on code"
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] md:aspect-[3/2] lg:aspect-[4/3] relative">
+                <Image
+                  src="/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg"
+                  alt="Developer working on code"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -233,8 +235,39 @@ export default function Home() {
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
-              <div className="grid grid-cols-2 gap-4 h-full">
+            <div className="w-full rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
+              {/* Mobile: Simple stacked layout */}
+              <div className="md:hidden space-y-4">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                  <Image
+                    src="/caspar-camille-rubin-7SDoly3FV_0-unsplash.jpg"
+                    alt="Custom PC hardware"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="relative aspect-square rounded-lg overflow-hidden">
+                    <Image
+                      src="/ben-iwara-GN_CTVe5TsI-unsplash.jpg"
+                      alt="Team collaboration"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="relative aspect-square rounded-lg overflow-hidden">
+                    <Image
+                      src="/christina-wocintechchat-com-L85a1k-XqH8-unsplash.jpg"
+                      alt="Professional in server room"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Desktop: Grid layout */}
+              <div className="hidden md:grid md:grid-cols-2 md:gap-4 md:h-[500px] lg:h-[600px]">
                 <div className="relative">
                   <Image
                     src="/caspar-camille-rubin-7SDoly3FV_0-unsplash.jpg"
