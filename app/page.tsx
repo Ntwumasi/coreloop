@@ -79,9 +79,9 @@ export default function Home() {
               <Image
                 src="/coreloop.jpg"
                 alt="CoreLoop"
-                width={180}
-                height={48}
-                className="h-12 w-auto"
+                width={200}
+                height={56}
+                className="h-14 w-auto"
               />
             </div>
 
