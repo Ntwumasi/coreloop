@@ -76,9 +76,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                CoreLoop
-              </span>
+              <Image
+                src="/coreloop.jpg"
+                alt="CoreLoop"
+                width={150}
+                height={40}
+                className="h-8 w-auto"
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -87,7 +91,7 @@ export default function Home() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                  className="text-gray-700 hover:text-orange-500 transition-colors font-medium"
                 >
                   {item.name}
                 </a>
@@ -104,7 +108,7 @@ export default function Home() {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-gray-700 hover:text-orange-500"
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -121,7 +125,7 @@ export default function Home() {
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md font-medium"
+                  className="block px-3 py-2 text-gray-700 hover:text-orange-500 hover:bg-gray-50 rounded-md font-medium"
                 >
                   {item.name}
                 </a>
@@ -144,7 +148,7 @@ export default function Home() {
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Technology Solutions for the{" "}
-                  <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
                     Modern World
                   </span>
                 </h1>
@@ -166,15 +170,15 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
                 <div>
-                  <div className="text-3xl font-bold text-blue-600">500+</div>
+                  <div className="text-3xl font-bold text-orange-500">500+</div>
                   <div className="text-sm text-gray-600 mt-1">Happy Clients</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-600">1000+</div>
+                  <div className="text-3xl font-bold text-orange-500">1000+</div>
                   <div className="text-sm text-gray-600 mt-1">Projects Delivered</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-600">24/7</div>
+                  <div className="text-3xl font-bold text-orange-500">24/7</div>
                   <div className="text-sm text-gray-600 mt-1">Support Available</div>
                 </div>
               </div>
@@ -210,10 +214,10 @@ export default function Home() {
             {services.map((service, index) => {
               const Icon = service.icon
               return (
-                <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200">
+                <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-orange-200">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="text-blue-600" size={24} />
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="text-orange-500" size={24} />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
@@ -232,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="w-full rounded-2xl overflow-hidden shadow-2xl order-2 lg:order-1">
@@ -327,7 +331,7 @@ export default function Home() {
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                      <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
                         {index + 1}
                       </div>
                     </div>
@@ -358,8 +362,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-3 gap-8">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="text-blue-600" size={32} />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mail className="text-orange-500" size={32} />
                 </div>
                 <CardTitle>Email Us</CardTitle>
                 <CardDescription className="text-base">
@@ -371,8 +375,8 @@ export default function Home() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="text-blue-600" size={32} />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Phone className="text-orange-500" size={32} />
                 </div>
                 <CardTitle>Call Us</CardTitle>
                 <CardDescription className="text-base">
@@ -384,8 +388,8 @@ export default function Home() {
 
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="text-blue-600" size={32} />
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="text-orange-500" size={32} />
                 </div>
                 <CardTitle>Visit Us</CardTitle>
                 <CardDescription className="text-base">
