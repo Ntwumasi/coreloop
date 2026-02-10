@@ -367,8 +367,7 @@ export default function Home() {
                 </div>
                 <CardTitle>Email Us</CardTitle>
                 <CardDescription className="text-base">
-                  info@coreloop.tech<br />
-                  sales@coreloop.tech
+                  admin@coreloopit.com
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -402,7 +401,7 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <Button size="lg" className="px-8" asChild>
-              <a href="mailto:info@coreloop.tech">
+              <a href="mailto:admin@coreloopit.com">
                 Send Us a Message
                 <Mail className="ml-2" size={20} />
               </a>
