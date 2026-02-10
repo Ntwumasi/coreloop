@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Menu,
   X,
@@ -15,9 +15,7 @@ import {
   Briefcase,
   Users,
   Mail,
-  Phone,
-  MapPin,
-  ArrowRight
+  Phone
 } from "lucide-react"
 
 export default function Home() {
@@ -222,12 +220,6 @@ export default function Home() {
                     <CardTitle>{service.title}</CardTitle>
                     <CardDescription>{service.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <Button variant="ghost" className="group">
-                      Learn More
-                      <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
-                    </Button>
-                  </CardContent>
                 </Card>
               )
             })}
@@ -359,7 +351,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-2 gap-8 max-w-2xl mx-auto">
             <Card className="text-center hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -379,21 +371,7 @@ export default function Home() {
                 </div>
                 <CardTitle>Call Us</CardTitle>
                 <CardDescription className="text-base">
-                  +1 (555) 123-4567<br />
-                  Mon-Fri 9AM-6PM EST
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="text-center hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="text-orange-500" size={32} />
-                </div>
-                <CardTitle>Visit Us</CardTitle>
-                <CardDescription className="text-base">
-                  123 Tech Boulevard<br />
-                  Innovation District, CA 94025
+                  +233 244318649
                 </CardDescription>
               </CardHeader>
             </Card>
